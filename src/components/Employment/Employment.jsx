@@ -1,7 +1,7 @@
 import React from "react";
 
 import { EmploymentList } from "./EmplaoymentList/EmploymentList";
-import { EmploymentSlider } from "./EmploymentSLider/EmploymentSLider";
+import { EmploymentSlider } from "./EmploymentSlider/EmploymentSlider";
 
 import { HTag, PTag, Wrapper } from "../../shared/ui";
 
