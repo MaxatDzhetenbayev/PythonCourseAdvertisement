@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./EnrollInCourse.module.scss";
-import { Button, HTag, Input, PTag } from "../../../";
+import { HTag, PTag } from "../../../";
 import { Form } from "../../../../../components/StartLearning/Form/Form";
 export const EnrollInCourse = ({ onClose }) => {
   return (

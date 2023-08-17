@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useForm, Controller } from "react-hook-form";
-
+import { toast, ToastContainer } from "react-toastify";
 import { Input } from "../../../shared/ui/Input/Input";
 import { Button } from "../../../shared/ui";
 
@@ -24,6 +24,7 @@ export const Form = ({ modalClose }) => {
 
   const onSubmit = (data) => {
     console.log(data);
+    toast.success("Ваши данные были отправлены. Ожидайте обратной связи!");
     reset();
     if (modalClose) {
       modalClose();
