@@ -4,7 +4,7 @@ import { useForm, Controller } from "react-hook-form";
 import { Input } from "../../../shared/ui/Input/Input";
 import { Button } from "../../../shared/ui";
 
-import styles from "./form.module.scss";
+import styles from "./Form.module.scss";
 
 export const Form = ({ modalClose }) => {
   //   const { register, handleSubmit } = useForm();
