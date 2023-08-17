@@ -1,0 +1,24 @@
+.root {
+  margin-top: 90px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 45px;
+}
+
+.teacher_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, calc(50% - 30px));
+  justify-content: space-between;
+  gap: 180px 30px;
+}
+
+@media (max-width: 960px) {
+  .teacher_list {
+    max-width: 640px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,35 @@
+.root {
+  padding-bottom: 40px;
+  background-color: var(--secondary-color);
+}
+
+.footer {
+  display: flex;
+  color: var(--alternative-text-color);
+  justify-content: space-between;
+  align-items: center;
+
+  &_logo {
+    width: 100px;
+  }
+
+  &_sociallist {
+    display: flex;
+    gap: 50px;
+  }
+
+  &_socialItem {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 720px) {
+  .footer {
+    flex-direction: column;
+    gap: 30px;
+
+    &_logo {
+      display: none;
+    }
+  }
+}

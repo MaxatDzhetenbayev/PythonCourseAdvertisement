@@ -1,0 +1,39 @@
+.root {
+  margin-top: 90px;
+  padding: 90px 0;
+  background-color: var(--secondary-color);
+  color: var(--alternative-text-color);
+}
+
+.choice {
+  &_container {
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 80px 60px;
+  }
+
+  &_inner {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+  }
+}
+
+@media (max-width: 1200px) {
+  .choice {
+    &_inner {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: flex-start;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .choice {
+    &_container {
+      padding: 40px 20px;
+    }
+  }
+}
