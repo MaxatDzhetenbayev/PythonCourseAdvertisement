@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import { PTag, HTag, Button, Clouds, Wrapper } from "../../shared/ui";
-import { Modal } from "../../shared/ui/Modal/Modal";
+import React from "react";
+import { PTag, HTag, Button, Clouds, Wrapper, Modal } from "../../shared/ui";
 import { EnrollInCourse } from "../../shared/ui/Modal/ModalContents/EnrollInCourse/EnrollInCourse";
 
 import { clouds_list } from "../../shared/consts/consts";

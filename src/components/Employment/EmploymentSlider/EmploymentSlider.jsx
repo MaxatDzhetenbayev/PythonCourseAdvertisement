@@ -43,8 +43,8 @@ export const EmploymentSlider = () => {
           },
         }}
       >
-        {companiesList.map((item) => (
-          <SwiperSlide className={styles.slider_item}>
+        {companiesList.map((item, index) => (
+          <SwiperSlide key={index} className={styles.slider_item}>
             <img src={item} alt="" />
           </SwiperSlide>
         ))}

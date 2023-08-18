@@ -1,8 +1,7 @@
 import React from "react";
 import { useModal } from "../../shared/hooks/useModal";
 
-import { Button, HTag, Wrapper } from "../../shared/ui";
-import { Modal } from "../../shared/ui/Modal/Modal";
+import { Button, HTag, Wrapper, Modal } from "../../shared/ui";
 import { EnrollInCourse } from "../../shared/ui/Modal/ModalContents/EnrollInCourse/EnrollInCourse";
 import styles from "./Choice.module.scss";
 

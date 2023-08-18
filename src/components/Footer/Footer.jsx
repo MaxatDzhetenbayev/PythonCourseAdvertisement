@@ -6,6 +6,7 @@ import { AiOutlineInstagram, AiOutlineWhatsApp } from "react-icons/ai";
 import { LiaTelegramPlane } from "react-icons/lia";
 import logo from "../../assets/logo.png";
 
+
 import styles from "./Footer.module.scss";
 
 const socialLinkList = [

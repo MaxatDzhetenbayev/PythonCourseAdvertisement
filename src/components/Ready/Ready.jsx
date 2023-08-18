@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Ready.module.scss";
-import { Button, HTag, PTag, Wrapper } from "../../shared/ui";
-import { Modal } from "../../shared/ui/Modal/Modal";
+import { Button, HTag, PTag, Wrapper, Modal } from "../../shared/ui";
 import { EnrollInCourse } from "../../shared/ui/Modal/ModalContents/EnrollInCourse/EnrollInCourse";
 import { useModal } from "../../shared/hooks/useModal";
 

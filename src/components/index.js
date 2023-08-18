@@ -8,3 +8,4 @@ export { Ready } from "./Ready/Ready";
 export { StartLearning } from "./StartLearning/StartLearning";
 export { Teachers } from "./Teachers/Teachers";
 export { Welcome } from "./Welcome/Welcome";
+export { CourrseFor } from "./CourrseFor/CourrseFor";

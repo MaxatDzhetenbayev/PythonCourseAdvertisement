@@ -9,8 +9,9 @@ import {
   Informaton,
   Ready,
   StartLearning,
-  Teachers,
   Welcome,
+  CourrseFor,
+  Teachers,
 } from "./components";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -22,7 +23,8 @@ function App() {
       <Welcome />
       <Informaton />
       <Ready />
-      <Teachers />
+      {/* <Teachers /> */}
+      <CourrseFor />
       <Employment />
       <StartLearning />
       <Educational />
