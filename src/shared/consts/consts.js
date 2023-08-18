@@ -1,3 +1,14 @@
+import artem from "../../assets/images/teachers/Artem.jpg";
+import andrey from "../../assets/images/teachers/Andrey.jpg";
+import danil from "../../assets/images/teachers/Danil.jpg";
+import madi from "../../assets/images/teachers/Madi.jpg";
+
+import imas from "../../assets/images/companies/imas.webp";
+import allzora from "../../assets/images/companies/allzora.png";
+import doc from "../../assets/images/companies/doc.jpg";
+import emotion from "../../assets/images/companies/emotion.png";
+import aero from "../../assets/images/companies/aero.jpg";
+
 export const employList = [
   {
     title: "Программа вебинаров, разработанная IT-рекрутерами",
@@ -5,15 +16,11 @@ export const employList = [
   },
   {
     title: "Работа с резюме",
-    text: "На сервисе Хекслет-резюме вы можете разместить свое первое резюме, а специалисты HR и более опытные разработчики дадут свои рекомендации по улучшению его содержания и структуры",
-  },
-  {
-    title: "Практика в Open Source",
-    text: "Вы будете участвовать в разработке открытых проектов Хекслета на GitHub. Учиться работать с чужим кодом, оформлять пулреквесты. Это опыт реального продакшена, ценный для любого работодателя",
+    text: "В школе Delta Education - мы работаем с вашим резюме, специалисты HR и более опытные разработчики дают свои рекомендации по улучшению его содержания и структуры",
   },
   {
     title: "Тестовые задания с собеседований",
-    text: "В нашей базе более 150 тестовых заданий от компаний-партнеров Хекслета. Вы поработаете с типовыми задачами из настоящих проектов. Это придаст уверенности и поможет пройти собеседование",
+    text: "В нашей базе более 100 тестовых заданий от компаний-партнеров школы Delta Education. Вы поработаете с типовыми задачами из настоящих проектов. Это придаст уверенности и поможет пройти собеседование",
   },
   {
     title: "Персональный карьерный консультант",
@@ -30,10 +37,51 @@ export const educationallist = [
 ];
 
 export const clouds_list = [
-  "Старт 17 августа",
   "Обучение без дедлайнов",
   "Практика с первого дня",
-  "4 проекта в портфолио на GitHub",
+  "3 проекта в портфолио на GitHub",
   "Помощь в трудоустройстве",
-  "Гарантированные собеседования в компаниях-партнерах",
+  "Уровень подготовки не важен",
 ];
+
+export const teachersList = [
+  {
+    name: "Касьян Артем",
+    text: "Разработчик специалист в области парсинга, back-end разработчик. Знания Python3, async, JavaScript, bash, RegEx, Django, DRF, MySQL, PostgreSQL, Redis, Celery, Testing, CI/CD, docker, docker-compose, nginx.",
+    image: artem,
+  },
+  {
+    name: "Богатов Даниил",
+    text: "Бэкенд разработчик на Python, специалист в области парсинга СМИ (новостных источников). Знания Linux, Scrapy, Selenium, Playwright, Tesseract OCR. Использование технологий Git, Docker, Kubernetes",
+    image: danil,
+  },
+  {
+    name: "Цхай Андрей",
+    text: "Python Разработчик, специалист в области парсинга социальных сетей(Facebook, Instagram). Знание Django Rest Framework, MachineLearning, а также различных Frontend фреймворков.",
+    image: andrey,
+  },
+  {
+    name: "Советбеков Мади",
+    text: "Специалист в области парсинга социальных сетей, data science. Опытный Python-developer. Обширные знания в работе сетевых протоколов.",
+    image: madi,
+  },
+];
+
+export const companiesList = [imas, aero, doc, emotion, allzora];
+
+export const infoList = [
+  {
+    title: "Обучаем разработчиков",
+    text: "с 2022 года",
+  },
+  {
+    title: "Cтудентов учатся на потоке ежемесячно",
+    text: "30+",
+  },
+  {
+    title: "10 компаний-партнеров",
+    text: "Где собеседуют наших выпускников",
+  },
+];
+
+

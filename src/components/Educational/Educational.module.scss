@@ -13,7 +13,15 @@
 
     svg {
       color: var(--primary-color);
+      width: 60px;
     }
+  }
+
+  &_mainItem {
+    font-size: 29px;
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    gap: 25px;
   }
 }
 

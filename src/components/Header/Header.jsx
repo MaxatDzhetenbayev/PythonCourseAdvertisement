@@ -5,10 +5,12 @@ import { Wrapper } from "../../shared/ui";
 
 export const Header = () => {
   return (
-    <Wrapper>
-      <div className={styles.header}>
-        <img src={logo} alt="" />
-      </div>
-    </Wrapper>
+    <header className={styles.root}>
+      <Wrapper>
+        <div className={styles.header}>
+          <img src={logo} alt="" />
+        </div>
+      </Wrapper>
+    </header>
   );
 };

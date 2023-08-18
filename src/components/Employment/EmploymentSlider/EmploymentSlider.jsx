@@ -1,19 +1,16 @@
 import React, { useRef, useState } from "react";
-import logo from "../../../assets/logo.png";
 
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/grid";
 
 import styles from "./EmploymentSlider.module.scss";
 
-// import required modules
 import { Navigation, Grid } from "swiper/modules";
 import { HTag } from "../../../shared/ui";
+import { companiesList } from "../../../shared/consts/consts";
 
 export const EmploymentSlider = () => {
   return (
@@ -24,6 +21,10 @@ export const EmploymentSlider = () => {
       <Swiper
         navigation={true}
         modules={[Navigation, Grid]}
+        autoplay={{
+          delay: 1000,
+          stopOnLastSlide: true,
+        }}
         className={styles.slider}
         slidesPerView={1}
         slidesPerGroup={1}
@@ -42,42 +43,11 @@ export const EmploymentSlider = () => {
           },
         }}
       >
-        <SwiperSlide className={styles.slider_item}>
-          <img src={logo} alt="" />
-        </SwiperSlide>
-        <SwiperSlide className={styles.slider_item}>
-          <img src={logo} alt="" />
-        </SwiperSlide>
-        <SwiperSlide className={styles.slider_item}>
-          <img src={logo} alt="" />
-        </SwiperSlide>
-        <SwiperSlide className={styles.slider_item}>
-          <img src={logo} alt="" />
-        </SwiperSlide>
-        <SwiperSlide className={styles.slider_item}>
-          <img src={logo} alt="" />
-        </SwiperSlide>
-        <SwiperSlide className={styles.slider_item}>
-          <img src={logo} alt="" />
-        </SwiperSlide>
-        <SwiperSlide className={styles.slider_item}>
-          <img src={logo} alt="" />
-        </SwiperSlide>
-        <SwiperSlide className={styles.slider_item}>
-          <img src={logo} alt="" />
-        </SwiperSlide>
-        <SwiperSlide className={styles.slider_item}>
-          <img src={logo} alt="" />
-        </SwiperSlide>
-        <SwiperSlide className={styles.slider_item}>
-          <img src={logo} alt="" />
-        </SwiperSlide>
-        <SwiperSlide className={styles.slider_item}>
-          <img src={logo} alt="" />
-        </SwiperSlide>
-        <SwiperSlide className={styles.slider_item}>
-          <img src={logo} alt="" />
-        </SwiperSlide>
+        {companiesList.map((item) => (
+          <SwiperSlide className={styles.slider_item}>
+            <img src={item} alt="" />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );

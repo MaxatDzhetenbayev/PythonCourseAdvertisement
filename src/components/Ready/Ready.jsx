@@ -9,7 +9,7 @@ export const Ready = () => {
   const [isView, open, close] = useModal();
 
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <Wrapper>
         <div className={styles.ready}>
           <HTag style={{ textAlign: "center" }} variant="h3">
@@ -21,10 +21,12 @@ export const Ready = () => {
           </PTag>
           <Button handleCLick={open}>Хочу попробывать!</Button>
         </div>
-        {isView && (
-          <Modal onClose={close} content={<EnrollInCourse onClose={close} />} />
-        )}
+        <Modal
+          onClose={close}
+          content={<EnrollInCourse onClose={close} />}
+          isView={isView}
+        />
       </Wrapper>
-    </div>
+    </section>
   );
 };

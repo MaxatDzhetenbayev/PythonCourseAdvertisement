@@ -1,5 +1,5 @@
 import React from "react";
 import styles from "./Wrapper.module.scss";
 export const Wrapper = ({ children }) => {
-  return <div className={styles.root}>{children}</div>;
+  return <section className={styles.root}>{children}</section>;
 };

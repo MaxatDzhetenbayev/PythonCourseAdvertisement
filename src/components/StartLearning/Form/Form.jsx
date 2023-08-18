@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useForm, Controller } from "react-hook-form";
+import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import { Input } from "../../../shared/ui/Input/Input";
 import { Button } from "../../../shared/ui";
-
 import styles from "./Form.module.scss";
 
 export const Form = ({ modalClose }) => {
-  //   const { register, handleSubmit } = useForm();
   const {
     control,
     handleSubmit,
@@ -23,7 +22,28 @@ export const Form = ({ modalClose }) => {
   });
 
   const onSubmit = (data) => {
-    console.log(data);
+    //   axios
+    //     .post(
+    //       "http://localhost:3000/registration",
+    //       {
+    //         ...data,
+    //       },
+    //       {
+    //         headers: {
+    //           "Content-Type": "application/json",
+    //         },
+    //       }
+    //     )
+    //     .then((res) => {
+    //       if (res.status === 201) {
+    //         toast.success(
+    //           "Ваши данные были отправлены. Ожидайте обратной связи!"
+    //         );
+    //       }
+    //     })
+    //     .catch((err) => {
+    //       toast.error("Ошибка! Ваши данные не были отправлены");
+    //     });
     toast.success("Ваши данные были отправлены. Ожидайте обратной связи!");
     reset();
     if (modalClose) {

@@ -5,7 +5,7 @@ import styles from "./StartLearning.module.scss";
 
 export const StartLearning = () => {
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <Wrapper>
         <div className={styles.wrapper}>
           <div className={styles.container}>
@@ -34,6 +34,6 @@ export const StartLearning = () => {
           </div>
         </div>
       </Wrapper>
-    </div>
+    </section>
   );
 };

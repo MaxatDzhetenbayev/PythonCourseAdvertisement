@@ -14,7 +14,7 @@ export const Welcome = () => {
 
   return (
     <Wrapper>
-      <section className={styles.welcome}>
+      <div className={styles.welcome}>
         <PTag variant="sm" className={styles.welcome_headText}>
           Курс с нуля до трудоустройства за 6 месяцев
         </PTag>
@@ -40,10 +40,13 @@ export const Welcome = () => {
             </Clouds>
           ))}
         </div>
-        {isView && (
-          <Modal onClose={close} content={<EnrollInCourse onClose={close} />} />
-        )}
-      </section>
+
+        <Modal
+          onClose={close}
+          content={<EnrollInCourse onClose={close} />}
+          isView={isView}
+        />
+      </div>
     </Wrapper>
   );
 };

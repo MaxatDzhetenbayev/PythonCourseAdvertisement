@@ -1,16 +1,16 @@
 import React from "react";
+import { useModal } from "../../shared/hooks/useModal";
 
 import { Button, HTag, Wrapper } from "../../shared/ui";
-import styles from "./Choice.module.scss";
 import { Modal } from "../../shared/ui/Modal/Modal";
 import { EnrollInCourse } from "../../shared/ui/Modal/ModalContents/EnrollInCourse/EnrollInCourse";
-import { useModal } from "../../shared/hooks/useModal";
+import styles from "./Choice.module.scss";
 
 export const Choice = () => {
   const [isView, open, close] = useModal();
 
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <Wrapper>
         <div className={styles.choice}>
           <div className={styles.choice_container}>
@@ -24,9 +24,11 @@ export const Choice = () => {
           </div>
         </div>
       </Wrapper>
-      {isView && (
-        <Modal onClose={close} content={<EnrollInCourse onClose={close} />} />
-      )}
-    </div>
+      <Modal
+        onClose={close}
+        content={<EnrollInCourse onClose={close} />}
+        isView={isView}
+      />
+    </section>
   );
 };

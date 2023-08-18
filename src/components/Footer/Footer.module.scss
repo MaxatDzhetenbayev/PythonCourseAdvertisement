@@ -23,6 +23,25 @@
   }
 }
 
+.instagram {
+  color: var(--alternative-text-color);
+  &:hover {
+    color: #fd3d6d;
+  }
+}
+.telegram {
+  color: var(--alternative-text-color);
+  &:hover {
+    color: #3dd0fd;
+  }
+}
+.whatsapp {
+  color: var(--alternative-text-color);
+  &:hover {
+    color: #4dfd3d;
+  }
+}
+
 @media (max-width: 720px) {
   .footer {
     flex-direction: column;

@@ -21,16 +21,26 @@
 
 @media (max-width: 1200px) {
   .choice {
+    text-align: center;
     &_inner {
       display: flex;
       flex-direction: column;
       gap: 20px;
-      align-items: flex-start;
+      align-items: center;
     }
   }
 }
 
+@media (max-width: 960px) {
+  .root {
+    margin-top: 20px;
+  }
+}
+
 @media (max-width: 540px) {
+  .root {
+    padding: 45px 0;
+  }
   .choice {
     &_container {
       padding: 40px 20px;

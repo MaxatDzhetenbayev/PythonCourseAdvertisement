@@ -16,7 +16,7 @@ const useList = [
 export const Informaton = () => {
   return (
     <Wrapper>
-      <section className={styles.root}>
+      <div className={styles.root}>
         <div className={styles.information_demand}>
           <HTag className={styles.information_title} variant="h3">
             Востребованная на рынке труда IT-профессия
@@ -62,7 +62,7 @@ export const Informaton = () => {
             })}
           </div>
         </div>
-      </section>
+      </div>
     </Wrapper>
   );
 };
