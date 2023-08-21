@@ -22,29 +22,28 @@ export const Form = ({ modalClose }) => {
   });
 
   const onSubmit = (data) => {
-    //   axios
-    //     .post(
-    //       "http://localhost:3000/registration",
-    //       {
-    //         ...data,
-    //       },
-    //       {
-    //         headers: {
-    //           "Content-Type": "application/json",
-    //         },
-    //       }
-    //     )
-    //     .then((res) => {
-    //       if (res.status === 201) {
-    //         toast.success(
-    //           "Ваши данные были отправлены. Ожидайте обратной связи!"
-    //         );
-    //       }
-    //     })
-    //     .catch((err) => {
-    //       toast.error("Ошибка! Ваши данные не были отправлены");
-    //     });
-    toast.success("Ваши данные были отправлены. Ожидайте обратной связи!");
+      axios
+        .post(
+          "https://courses-registration-db.vercel.app/registration",
+          {
+            ...data,
+          },
+          {
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        )
+        .then((res) => {
+          if (res.status === 201) {
+            toast.success(
+              "Ваши данные были отправлены. Ожидайте обратной связи!"
+            );
+          }
+        })
+        .catch((err) => {
+          toast.error("Ошибка! Ваши данные не были отправлены");
+        });
     reset();
     if (modalClose) {
       modalClose();

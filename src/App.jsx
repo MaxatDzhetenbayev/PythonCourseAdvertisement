@@ -23,7 +23,7 @@ function App() {
       <Welcome />
       <Informaton />
       <Ready />
-      {/* <Teachers /> */}
+      <Teachers />
       <CourrseFor />
       <Employment />
       <StartLearning />
