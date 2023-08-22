@@ -46,7 +46,7 @@ export const WelcomeSlider = () => {
           <Wrapper>
             <div className={styles.center}>
               <div className={styles.col}>
-                <HTag variant="h2">
+                <HTag variant="h3">
                   НОВЫЙ УЧЕБНЫЙ <br /> ЦЕНТР
                 </HTag>
                 <PTag style={{ marginTop: 20 }} variant="lg">
@@ -62,21 +62,20 @@ export const WelcomeSlider = () => {
         <SwiperSlide style={bgImage(image2)} className={styles.slider_item}>
           <Wrapper>
             <div className={styles.center}>
-              <HTag variant="h2">
-                <div className={styles.col}>
-                  <HTag variant="h2">
+              <div className={styles.col}>
+                <div className={styles.background}>
+                  <HTag variant="h3">
                     Открыта запись <br /> на пробный урок!
                   </HTag>
                   <PTag style={{ marginTop: 20 }} variant="lg">
-                    Приглашаем всех на полноценное бесплатное <br />
-                    пробное занятие с преподавателями школы <br />
-                    DELTA EDUCATION
+                    Приглашаем всех на полноценное бесплатное пробное занятие с
+                    преподавателями школы DELTA EDUCATION
                   </PTag>
-                  <Button handleCLick={open} style={{ marginTop: 30 }}>
-                    Оставить заявку
-                  </Button>
                 </div>
-              </HTag>
+                <Button handleCLick={open} style={{ marginTop: 30 }}>
+                  Оставить заявку
+                </Button>
+              </div>
             </div>
           </Wrapper>
         </SwiperSlide>

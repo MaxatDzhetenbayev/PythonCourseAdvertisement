@@ -14,6 +14,12 @@ export const ModalContainer = ({ children, onClose, isView }) => {
     closed: { y: "-100vh" },
   };
 
+  const handleKeyDown = (event) => {
+    if (event.key === "Esc") {
+      onClose();
+    }
+  };
+
   return (
     <motion.div
       animate={isView ? "open" : "closed"}
@@ -21,7 +27,7 @@ export const ModalContainer = ({ children, onClose, isView }) => {
       className={styles.root}
     >
       <div className={styles.top}>
-        <button onClick={onClose}>
+        <button onClick={onClose} onKeyDown={handleKeyDown}>
           <AiOutlineClose />
         </button>
       </div>

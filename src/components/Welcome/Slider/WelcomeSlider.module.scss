@@ -4,19 +4,29 @@
 
 .slider_item {
   width: 100%;
-  height: 760px;
 }
 
 .center {
-  height: 760px;
+  height: 720px;
   display: flex;
   align-items: center;
 
   color: var(--alternative-text-color);
 }
 
+.background {
+  background-color: #00000056;
+  padding: 20px;
+}
+
 .col {
   display: flex;
   flex-direction: column;
   align-items: start;
+}
+
+@media (max-width: 720px) {
+  .center {
+    height: 520px;
+  }
 }

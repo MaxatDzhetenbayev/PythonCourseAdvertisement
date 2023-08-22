@@ -1,15 +1,11 @@
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-import { useResize } from "../../shared/hooks/useResize";
-
 import { HTag, PTag, Wrapper } from "../../shared/ui";
 
 import styles from "./Salary.module.scss";
 
 export const Salary = () => {
-  const [large] = useResize(960);
-  const [medium] = useResize(720);
   const tabs = [
     {
       icon: "",
@@ -92,6 +88,12 @@ export const Salary = () => {
     },
   ];
 
+  const handleKeyDown = (event, item) => {
+    if (event.key === "Enter") {
+      setSelectedTab(item)
+    }
+  };
+
   const [selectedTab, setSelectedTab] = useState(tabs[0]);
 
   return (
@@ -110,10 +112,12 @@ export const Salary = () => {
             <ul className={styles.list}>
               {tabs.map((item) => (
                 <li
+                  tabIndex={0}
                   key={item.label}
                   className={
                     item.label === selectedTab.label ? styles.selected : ""
                   }
+                  onKeyDown={(event) => handleKeyDown(event, item)}
                   onClick={() => setSelectedTab(item)}
                 >
                   <PTag>{item.label}</PTag>
@@ -152,7 +156,7 @@ export const Salary = () => {
                             borderRadius: 7,
                           }}
                         ></div>
-                        <PTag style={{ minWidth: 120 }}>{item.salary}</PTag>
+                        <PTag>{item.salary}</PTag>
                       </div>
                     </div>
                   ))}

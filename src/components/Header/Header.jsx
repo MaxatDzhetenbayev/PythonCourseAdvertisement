@@ -11,7 +11,6 @@ export const Header = () => {
       <Wrapper>
         <div className={styles.header}>
           <img src={logo} alt="" />
-			 <p>ЧТо то придумать еще</p>
         </div>
       </Wrapper>
     </header>
