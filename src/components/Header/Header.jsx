@@ -1,7 +1,9 @@
 import React from "react";
+import { HTag, Wrapper } from "../../shared/ui";
+
 import logo from "../../assets/logo-alternative.png";
+
 import styles from "./Header.module.scss";
-import { Wrapper } from "../../shared/ui";
 
 export const Header = () => {
   return (
@@ -9,6 +11,7 @@ export const Header = () => {
       <Wrapper>
         <div className={styles.header}>
           <img src={logo} alt="" />
+			 <p>ЧТо то придумать еще</p>
         </div>
       </Wrapper>
     </header>

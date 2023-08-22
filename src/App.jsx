@@ -15,16 +15,22 @@ import {
 } from "./components";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { WelcomeSlider } from "./components/Welcome/Slider/WelcomeSlider";
+import { Available } from "./components/Available/Available";
+import { Salary } from "./components/Salary/Salary";
 
 function App() {
   return (
     <>
       <Header />
-      <Welcome />
-      <Informaton />
+      <WelcomeSlider />
+      {/* <Welcome /> */}
+      <Available />
+      {/* <Informaton /> */}
       <Ready />
       {/* <Teachers /> */}
-      <CourrseFor />
+      {/* <CourrseFor /> */}
+      <Salary />
       <Employment />
       <StartLearning />
       <Educational />

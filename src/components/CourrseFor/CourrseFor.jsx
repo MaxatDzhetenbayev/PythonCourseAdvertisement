@@ -23,7 +23,7 @@ export const CourrseFor = () => {
     {
       img: senior,
       title: "Опытным программистам",
-      text: "Тем кто хочет освоить новый язык программирования и научиться создавать веб приложения с помощью средств языка программирования Python.",
+      text: "Тем кто хочет освоить новый язык программирования и расширит свой кругозор знаний.",
     },
   ];
 
@@ -31,7 +31,7 @@ export const CourrseFor = () => {
     <section>
       <Wrapper>
         <div className={styles.root}>
-          <HTag variant="h2">Кому подойдет этот курс</HTag>
+          <HTag variant="h2">Кому подойдут эти курсы</HTag>
           <div className={styles.inner}>
             {coursesForList.map((item) => (
               <div className={styles.item}>
