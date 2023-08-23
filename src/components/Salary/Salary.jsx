@@ -23,7 +23,7 @@ export const Salary = () => {
         },
         {
           label: "senior",
-          salary: "от 800 000 ₸",
+          salary: "800 000 ₸",
         },
       ],
     },
@@ -43,7 +43,7 @@ export const Salary = () => {
         },
         {
           label: "senior",
-          salary: "от 800 000 ₸",
+          salary: "800 000 ₸",
         },
       ],
     },
@@ -54,7 +54,7 @@ export const Salary = () => {
       gradation: [
         {
           label: "junior",
-          salary: "380 000 ₸",
+          salary: 380_000,
         },
         {
           label: "middle",
@@ -62,7 +62,7 @@ export const Salary = () => {
         },
         {
           label: "senior",
-          salary: "от 700 000 ₸",
+          salary: "700 000 ₸",
         },
       ],
     },
@@ -82,7 +82,7 @@ export const Salary = () => {
         },
         {
           label: "senior",
-          salary: "от 750 000 ₸",
+          salary: "750000",
         },
       ],
     },
@@ -181,7 +181,7 @@ export const Salary = () => {
               <HTag variant="h4">{selectedTab.fullName}</HTag>
               <div className={styles.col}>
                 {selectedTab.gradation.map((item, index) => (
-                  <div className={styles.item}>
+                  <div key={index} className={styles.item}>
                     <PTag style={{ marginBottom: 5 }}>{item.label}</PTag>
                     <div className={styles.row}>
                       <div
@@ -192,6 +192,7 @@ export const Salary = () => {
                           borderRadius: 7,
                         }}
                       ></div>
+                      {/* Add animation counter */}
                       <PTag>{item.salary}</PTag>
                     </div>
                   </div>

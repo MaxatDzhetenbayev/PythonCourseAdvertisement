@@ -24,7 +24,7 @@ export const StartLearning = () => {
                 </PTag>
                 <PTag variant="sm">
                   <span className={styles.container_blackVariant}>
-                    659 000 ₸
+                    ~270 000 ₸
                   </span>
                   <br /> при оплате сразу
                 </PTag>
