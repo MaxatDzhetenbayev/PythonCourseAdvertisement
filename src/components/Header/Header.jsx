@@ -1,7 +1,7 @@
 import React from "react";
 import { HTag, Wrapper } from "../../shared/ui";
 
-import logo from "../../assets/logo-alternative.png";
+import logo from "../../assets/logo.png";
 
 import styles from "./Header.module.scss";
 
