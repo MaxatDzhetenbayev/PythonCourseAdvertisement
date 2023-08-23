@@ -91,6 +91,10 @@ export const Form = ({ modalClose }) => {
         control={control}
         rules={{
           required: "Поле 'телефон' обязательное",
+          minLength: {
+            value: 10,
+            message: "Минимальное количество символов - 10",
+          },
         }}
         render={({ field }) => (
           <Input {...field} placeholder={"Введите ваш номер телефона"} />
