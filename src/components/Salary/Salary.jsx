@@ -54,7 +54,7 @@ export const Salary = () => {
       gradation: [
         {
           label: "junior",
-          salary: 380_000,
+          salary: "380 000 ₸",
         },
         {
           label: "middle",
@@ -82,7 +82,7 @@ export const Salary = () => {
         },
         {
           label: "senior",
-          salary: "750000",
+          salary: "750 000 ₸",
         },
       ],
     },
