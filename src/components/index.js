@@ -9,3 +9,6 @@ export { StartLearning } from "./StartLearning/StartLearning";
 export { Teachers } from "./Teachers/Teachers";
 export { Welcome } from "./Welcome/Welcome";
 export { CourrseFor } from "./CourrseFor/CourrseFor";
+export { Available } from "./Available/Available";
+export { Salary } from "./Salary/Salary";
+export { WelcomeSlider } from "./Welcome/Slider/WelcomeSlider";

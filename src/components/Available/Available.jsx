@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import cn from "classnames";
 import styles from "./Available.module.scss";
 
-import img from "../../assets/images/avilable/bg.jpg";
 import main from "../../assets/images/avilable/main.jpg";
 import item1 from "../../assets/images/avilable/item1.jpg";
 import item2 from "../../assets/images/avilable/item2.jpg";
@@ -34,12 +33,9 @@ export const Available = () => {
             из реальной жизни.
           </PTag>
           <PTag variant="sm" style={{ marginTop: 20 }}>
-            Программирование – профессиональный навык, доступный каждому. Но
-            чтобы его освоить, придется хорошо потрудиться. Можно пойти
-            медленным и длинным путем проб и ошибок, обучаясь самостоятельно. Но
-            гораздо рациональнее изучать языки программирования под руководством
-            опытного наставника, умеющего отличить важное от неважного и
-            понимающего, как применить полученные знания на практике.
+            Наша школа программирования базируется в Семее. Вы можете приступить
+            к обучению в любом возрасте. Для старта достаточно желания и
+            относительно небольшого количества свободного времени.
           </PTag>
         </div>
         <div className={styles.right_container}>

@@ -106,7 +106,7 @@ export const Salary = () => {
         <motion.div
           variants={{
             offscreen: {
-              x: -200,
+              x: -30,
               opacity: 0,
             },
             onscreen: {
@@ -131,11 +131,12 @@ export const Salary = () => {
         <motion.div
           variants={{
             offscreen: {
-              x: 200,
+              x: 30,
               opacity: 0,
             },
             onscreen: {
               opacity: 1,
+
               x: 0,
               transition: {
                 type: "spring",

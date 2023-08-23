@@ -33,7 +33,7 @@ export const Footer = () => {
               Delta Education
             </PTag>
             <PTag style={{ marginTop: 20, textAlign: "justify" }}>
-              Школа программирования Dekta Education - это курсы
+              Школа программирования Delta Education - это курсы
               программирования с сильными преподавателями, с помощью которых Вы
               сможете стать лучше.
             </PTag>
