@@ -90,7 +90,7 @@ export const Salary = () => {
 
   const handleKeyDown = (event, item) => {
     if (event.key === "Enter") {
-      setSelectedTab(item)
+      setSelectedTab(item);
     }
   };
 
@@ -98,16 +98,53 @@ export const Salary = () => {
 
   return (
     <Wrapper>
-      <div className={styles.root}>
-        <div className={styles.heading}>
+      <motion.div
+        initial="offscreen"
+        whileInView="onscreen"
+        className={styles.root}
+      >
+        <motion.div
+          variants={{
+            offscreen: {
+              x: -200,
+              opacity: 0,
+            },
+            onscreen: {
+              opacity: 1,
+              x: 0,
+              transition: {
+                type: "spring",
+                delay: 0.3,
+              },
+            },
+          }}
+          className={styles.heading}
+        >
           <HTag variant="h3">Зарплаты специалистов в IT</HTag>
           <PTag style={{ maxWidth: 540, marginTop: 20 }}>
             Зарплаты в IT сильно зависят от уровня навыков и знаний технологий,
             ниже приведены средние данные на основе популярных платформ с
             вакансиями в Казахстане.
           </PTag>
-        </div>
-        <div className={styles.window}>
+        </motion.div>
+
+        <motion.div
+          variants={{
+            offscreen: {
+              x: 200,
+              opacity: 0,
+            },
+            onscreen: {
+              opacity: 1,
+              x: 0,
+              transition: {
+                type: "spring",
+                delay: 0.3,
+              },
+            },
+          }}
+          className={styles.window}
+        >
           <nav className={styles.nav}>
             <ul className={styles.list}>
               {tabs.map((item) => (
@@ -131,41 +168,39 @@ export const Salary = () => {
               ))}
             </ul>
           </nav>
-          <div>
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={selectedTab.label}
-                initial={{ y: 10, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                exit={{ y: -10, opacity: 0 }}
-                transition={{ duration: 0.2 }}
-                style={{ backgroundColor: selectedTab.color }}
-                className={styles.content}
-              >
-                <HTag variant="h4">{selectedTab.fullName}</HTag>
-                <div className={styles.col}>
-                  {selectedTab.gradation.map((item, index) => (
-                    <div className={styles.item}>
-                      <PTag style={{ marginBottom: 5 }}>{item.label}</PTag>
-                      <div className={styles.row}>
-                        <div
-                          style={{
-                            width: `calc(23% * ${index + 1})`,
-                            height: 30,
-                            backgroundColor: "#175dc7",
-                            borderRadius: 7,
-                          }}
-                        ></div>
-                        <PTag>{item.salary}</PTag>
-                      </div>
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={selectedTab.label}
+              initial={{ y: 10, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: -10, opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              style={{ backgroundColor: selectedTab.color }}
+              className={styles.content}
+            >
+              <HTag variant="h4">{selectedTab.fullName}</HTag>
+              <div className={styles.col}>
+                {selectedTab.gradation.map((item, index) => (
+                  <div className={styles.item}>
+                    <PTag style={{ marginBottom: 5 }}>{item.label}</PTag>
+                    <div className={styles.row}>
+                      <div
+                        style={{
+                          width: `calc(23% * ${index + 1})`,
+                          height: 30,
+                          backgroundColor: "#175dc7",
+                          borderRadius: 7,
+                        }}
+                      ></div>
+                      <PTag>{item.salary}</PTag>
                     </div>
-                  ))}
-                </div>
-              </motion.div>
-            </AnimatePresence>
-          </div>
-        </div>
-      </div>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          </AnimatePresence>
+        </motion.div>
+      </motion.div>
     </Wrapper>
   );
 };
