@@ -106,7 +106,7 @@ export const Salary = () => {
         <motion.div
           variants={{
             offscreen: {
-              x: -30,
+              x: -10,
               opacity: 0,
             },
             onscreen: {
@@ -131,7 +131,7 @@ export const Salary = () => {
         <motion.div
           variants={{
             offscreen: {
-              x: 30,
+              x: 10,
               opacity: 0,
             },
             onscreen: {
