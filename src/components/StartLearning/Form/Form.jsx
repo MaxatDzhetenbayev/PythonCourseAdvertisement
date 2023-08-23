@@ -22,28 +22,28 @@ export const Form = ({ modalClose }) => {
   });
 
   const onSubmit = (data) => {
-      axios
-        .post(
-          "https://courses-registration-db.vercel.app/registration",
-          {
-            ...data,
+    axios
+      .post(
+        "https://courses-registration-db.vercel.app/registration",
+        {
+          ...data,
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
           },
-          {
-            headers: {
-              "Content-Type": "application/json",
-            },
-          }
-        )
-        .then((res) => {
-          if (res.status === 201) {
-            toast.success(
-              "Ваши данные были отправлены. Ожидайте обратной связи!"
-            );
-          }
-        })
-        .catch((err) => {
-          toast.error("Ошибка! Ваши данные не были отправлены");
-        });
+        }
+      )
+      .then((res) => {
+        if (res.status === 201) {
+          toast.success(
+            "Ваши данные были отправлены. Ожидайте обратной связи!"
+          );
+        }
+      })
+      .catch((err) => {
+        toast.error("Ошибка! Ваши данные не были отправлены");
+      });
     reset();
     if (modalClose) {
       modalClose();
@@ -91,10 +91,6 @@ export const Form = ({ modalClose }) => {
         control={control}
         rules={{
           required: "Поле 'телефон' обязательное",
-          pattern: {
-            value: /^8 \d{1,3} \d{3} \d{2} \d{2}$/,
-            message: "Ваш номер должен быть в виде: 8 XXX XXX XX XX",
-          },
         }}
         render={({ field }) => (
           <Input {...field} placeholder={"Введите ваш номер телефона"} />
