@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
 import { useForm, Controller } from "react-hook-form";
 import axios from "axios";
-import { toast, ToastContainer } from "react-toastify";
+import { toast} from "react-toastify";
 import { Input } from "../../../shared/ui/Input/Input";
 import { Button } from "../../../shared/ui";
 import styles from "./Form.module.scss";
@@ -41,7 +40,7 @@ export const Form = ({ modalClose }) => {
           );
         }
       })
-      .catch((err) => {
+      .catch(() => {
         toast.error("Ошибка! Ваши данные не были отправлены");
       });
     reset();

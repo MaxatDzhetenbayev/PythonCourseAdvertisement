@@ -1,8 +1,9 @@
-import React from "react";
-import { PTag, HTag, Button, Clouds, Wrapper, Modal } from "../../shared/ui";
+import { Button, 
+  // Clouds, 
+  Wrapper, Modal, HTag } from "../../shared/ui";
 import { EnrollInCourse } from "../../shared/ui/Modal/ModalContents/EnrollInCourse/EnrollInCourse";
 
-import { clouds_list } from "../../shared/consts/consts";
+// import { clouds_list } from "../../shared/consts/consts";
 
 import PythonImage from "../../assets/images/welcome-python.svg";
 import styles from "./Welcome.module.scss";
@@ -12,33 +13,30 @@ export const Welcome = () => {
   const [isView, open, close] = useModal();
 
   return (
+    <div className={styles.background}>
     <Wrapper>
       <div className={styles.welcome}>
-        <PTag variant="sm" className={styles.welcome_headText}>
-          Курс с нуля до трудоустройства за 6 месяцев
-        </PTag>
         <div className={styles.welcome_content}>
           <div className={styles.welcome_text}>
-            <HTag variant="h4">Профессия</HTag>
-            <HTag variant="h1">«Python-разработчик»</HTag>
-            <PTag className={styles.welcome_mainText}>
-              Освойте один из самых популярных языков для бэкенда, научитесь
-              создавать полноценные сайты и веб-приложения и реализовать
-              внутреннюю логику работы программ на фреймворке Django
-            </PTag>
+            <HTag variant="h1" >
+              Delta Education
+            </HTag>
+            <HTag variant="h3" >
+              Единственная школа программирования в Семее от практиков.
+            </HTag>
             <Button handleCLick={open} style={{ marginTop: "20px" }}>
-              Начать учиться
+              Подать заявку
             </Button>
           </div>
           <img src={PythonImage} alt="" />
         </div>
-        <div className={styles.welcome_clouds}>
+        {/* <div className={styles.welcome_clouds}>
           {clouds_list.map((cloud) => (
             <Clouds key={cloud} size="sm">
               {cloud}
             </Clouds>
           ))}
-        </div>
+        </div> */}
 
         <Modal
           onClose={close}
@@ -47,5 +45,7 @@ export const Welcome = () => {
         />
       </div>
     </Wrapper>
+    <div className={styles.welcome__black}></div>
+    </div>
   );
 };

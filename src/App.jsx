@@ -1,20 +1,20 @@
-import React from "react";
-
 import {
   Choice,
   Educational,
   Employment,
   Footer,
   Header,
-  Informaton,
   Ready,
   StartLearning,
-  Welcome,
-  CourrseFor,
-  Teachers,
   Available,
   Salary,
-  WelcomeSlider,
+  Courses,
+  // WelcomeSlider,
+  Welcome,
+  VideoReview,
+  Teachers,
+  CourrseFor,
+  // Informaton,
 } from "./components";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -23,13 +23,15 @@ function App() {
   return (
     <>
       <Header />
-      <WelcomeSlider />
-      {/* <Welcome /> */}
+      <Welcome />
+      {/* <WelcomeSlider /> */}
       <Available />
       {/* <Informaton /> */}
       <Ready />
-      {/* <Teachers /> */}
-      {/* <CourrseFor /> */}
+      <Courses/>
+      <CourrseFor />
+      <Teachers />
+      <VideoReview/>
       <Salary />
       <Employment />
       <StartLearning />

@@ -12,3 +12,5 @@ export { CourrseFor } from "./CourrseFor/CourrseFor";
 export { Available } from "./Available/Available";
 export { Salary } from "./Salary/Salary";
 export { WelcomeSlider } from "./Welcome/Slider/WelcomeSlider";
+export { Courses } from "./Courses/Courses";
+export {VideoReview} from './VideoReview/VideoReview'

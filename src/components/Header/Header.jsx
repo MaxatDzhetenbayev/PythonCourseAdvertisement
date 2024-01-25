@@ -1,5 +1,4 @@
-import React from "react";
-import { HTag, Wrapper } from "../../shared/ui";
+import { Wrapper } from "../../shared/ui";
 
 import logo from "../../assets/logo.png";
 

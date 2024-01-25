@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Ready.module.scss";
 import { Button, HTag, PTag, Wrapper, Modal } from "../../shared/ui";
 import { EnrollInCourse } from "../../shared/ui/Modal/ModalContents/EnrollInCourse/EnrollInCourse";

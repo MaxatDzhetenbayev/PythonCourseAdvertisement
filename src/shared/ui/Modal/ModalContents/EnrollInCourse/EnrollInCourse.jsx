@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./EnrollInCourse.module.scss";
 import { HTag, PTag } from "../../../";
 import { Form } from "../../../../../components/StartLearning/Form/Form";

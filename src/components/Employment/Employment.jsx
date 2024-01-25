@@ -1,4 +1,3 @@
-import React from "react";
 
 import { EmploymentList } from "./EmplaoymentList/EmploymentList";
 import { EmploymentSlider } from "./EmploymentSlider/EmploymentSlider";
